@@ -1,7 +1,6 @@
 <!--
     這是註解的TAG
     中間可以放多行
-    測試
 -->
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -16,9 +15,55 @@
 <body bgcolor="#ffffcc">
     內容顯示於此
 
+    <!--段落有些屬性可以調整-->
+    <p>段落預設靠左</p>
+    <p align="center">本句話置中</p>
+    <p align="right" >本句話靠右</p>
+     
+    <!--要換行記得要加BR-->
+    第一行句子有加換行<br>
+    第二行沒有
+    所以會跟第三行黏在一起
+
+    <!--下方為Font的標籤測試-->
+    <font size="1">字的大小最小是 1</font><br>
+    <font size="7">字的大小最小是 7</font><br>   
+    <font size="2" color="#FFCCCC">還可以調顏色</font><br>      
+    <font size="3" face="標楷體">字型也可以處理</font><br>
+    
+    <!--下方為字體效果的標籤測試-->    
+    一般文字<br>
+    <i>斜體文字</i><br>
+    <b>粗體文字</b><br>
+
+    <!--下方為數學式的標籤測試，希臘字母是數學符號-->        
+    <font face="symbol">abcdefghijklmnopqrstuvwxyz</font><br>
+    <font face="symbol">ABCDEFGHIJKLMNOPQRSTUVWXYZ</font><br>
+    <!--結合上下標-->  
+    Y = Ax<sup>2</sup> + Bx + C<sub>1</sub>.
+
+    <!--透過PRE顯示文字原版的標籤-->       
+    <pre>
+        文字原版
+        的標籤是PRE，看起來
+        就是長這樣
+        新詩體
+會留下空白
+  的優
+ 要注意        
+    </pre>
+
+    <!--特殊字元的處理-->        
+    <pre>    
+    可以用&加上OO來處理特殊符號
+    詳細的內容可以去https://www.w3schools.com/html/html_entities.asp看
+    &gt;
+    &lt;
+    也可以用編號
+    是 &#38;
+    是 &#38;
+
+    </pre>
 </body>
-
-
-
 
 </html>
