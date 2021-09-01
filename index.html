@@ -19,7 +19,7 @@
     <p>段落預設靠左</p>
     <p align="center">本句話置中</p>
     <p align="right" >本句話靠右</p>
-     
+
     <!--要換行記得要加BR-->
     第一行句子有加換行<br>
     第二行沒有
@@ -41,7 +41,7 @@
     <font face="symbol">ABCDEFGHIJKLMNOPQRSTUVWXYZ</font><br>
     <!--結合上下標-->  
     Y = Ax<sup>2</sup> + Bx + C<sub>1</sub>.
-
+    
     <!--透過PRE顯示文字原版的標籤-->       
     <pre>
         文字原版
@@ -52,7 +52,7 @@
   的優
  要注意        
     </pre>
-
+    
     <!--特殊字元的處理-->        
     <pre>    
     可以用&加上OO來處理特殊符號
@@ -62,8 +62,48 @@
     也可以用編號
     是 &#38;
     是 &#38;
-
     </pre>
+
+    <!--影像的處理，大多都寫在Attribute裡-->   
+    <!-- 先碼掉    
+    基本的顯示<br>
+    <img src='sleep.jpg'><br><br>
+    -->
+
+    替代文字<br>
+    <img src='donthavethe pic.jpg' alt='這裡是替代文字' title="TITLE的替代"><br><br>
+
+    用像素設定影像高度(寬度會自動依比例調整)<br>
+    <img src='sleep.jpg' height="123"><br><br>
+    <!-- 先碼掉 
+    用像素設定影像高度與寬度<br>
+    <img src='sleep.jpg' height="123" width="456"><br><br>
+    -->
+    
+    <!--百分比的基準，通常是整個視窗大小，而非文件大小-->
+    <!--但沒有更改測試成功-->    
+    <!-- 先碼掉
+    以百分比設定影像高度，大小是跟著視窗<br>    
+    <img src='sleep.jpg' height="5%"><br><br>
+    -->
+
+    <!--Align的處理-->  
+    <!--TOP會顯示在圖片右側的上方-->
+    <img src='sleep.jpg' height="123"  align="top">
+    align設成"top"後會在這裡。
+    <br><br>
+    <img src='sleep.jpg' height="123"  align="middle">
+    "middle"是在這。
+    <br><br>    
+    <img src='sleep.jpg' height="123"  align="bottom">
+    "bottom"的位置。
+    <br><br>   
+    <img src='sleep.jpg' height="123"  align="left">
+    設成了Left的時候。
+    <br><br>     
+    <img src='sleep.jpg' height="123"  align="right">
+    設成了Right的時候。    
+    <br><br>       
 </body>
 
 </html>
