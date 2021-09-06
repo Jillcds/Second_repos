@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+    將Table相關的Tag整理於此
+    名稱為Table.html   
+-->
+
+<html>
+<!--一般來說HTML都會分Head跟Body-->
+
+<!--Head在下方-->
+<head>
+    <title>網頁標題</title>
+</head>
+
+<!--以下為BODY，並且增加屬性-->
+<body bgcolor="#ffffcc">
+下方為Table1，基本的表格展示 <br>
+<!--TR為row，TD為column-->
+<table border="1">
+    <tr>
+        <td>第一列第一格</td>
+        <td>第一列第二格</td>
+        <td>第一列第三格</td>                
+    </tr>
+    <tr>
+        <td>2.1</td>
+        <td>2.2</td>
+        <td>2.3</td>                
+    </tr>
+</table>
+
+<br><br>下方為Table2，一些屬性的測試 <br>
+<!--cellspacing是格子到格子，cellpadding是資料到格子-->
+<table border="6" align="center" cellspacing="20" cellpadding="50">
+    <tr>
+        <td>第一列第一格</td>
+        <td>第一列第二格</td>
+        <td>第一列第三格</td>                
+    </tr>
+    <tr>
+        <td>2.1</td>
+        <td>2.2</td>
+        <td>2.3</td>                
+    </tr>
+</table>
+
+<br><br>下方為Table3，一些合併的結果 <br>
+<!--rowpan與colspan-->
+<table border="6" align="center">
+    <tr>
+        <td>第一列第一格</td>
+        <td colspan="2">第一列第二格</td>               
+    </tr>
+    <tr>
+        <td>2.1</td>
+        <td rowspan="2">2.2</td>
+        <td>2.3</td>                
+    </tr>
+    <tr>
+        <td>3.1</td>
+        <td>3.2</td>                
+    </tr>    
+</table>
+
+<br><br>下方為Table4，複雜的合併的結果 <br>
+<table border="1" align="center" cellspacing="20" cellpadding="50">
+    <tr>
+        <td rowspan="2">1</td>
+        <td colspan="2">2</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td rowspan="2">4</td>
+    </tr>
+    <tr>
+        <td colspan="2">5</td>
+    </tr>
+</table>
+
+
+</body>
+
+</html>

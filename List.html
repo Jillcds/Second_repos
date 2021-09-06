@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+    將List相關的Tag整理於此
+    名稱為List.html   
+-->
+
+<html>
+<!--一般來說HTML都會分Head跟Body-->
+
+<!--Head在下方-->
+<head>
+    <title>網頁標題</title>
+</head>
+
+<!--以下為BODY，並且增加屬性-->
+<body bgcolor="#ffffcc">
+    <!--未整理的清單會用 UL-->
+    <!--前方會有一個圓圈圈當作清單-->
+    長島冰茶材料：
+    <ul>
+        <li>琴酒 一份</li>
+        <li>伏特加 一份</li>
+        <li>蘭姆酒 一份</li>
+        <li>龍舌蘭 一份</li>
+        <li>橙皮酒 一份</li>
+        <li>萊姆汁 兩份</li>
+        <li>可樂 四份</li>
+    </ul>
+    
+    <!--整理的清單會用 OL-->
+    <!--前方會有號碼當作順序-->    
+    做法：
+    <ol>
+        <li>杯中放入適量冰塊</li>
+        <li>將可樂以外的材料依序倒入並攪拌</li>
+        <li>將可樂倒入並稍微攪拌</li>
+    </ol>
+
+    <!--如果是OL可以用 value改標籤-->  
+    可以用 value改標籤：
+    <ol>
+        <!--在這時候的便會從10開始算-->          
+        <li value="10">...XD</li> 
+        <li>( ′-`)y-～</li>
+        <li>(￣▽￣＃)﹏﹏</li>
+        <!--在這時候的便會從-2開始加--> 
+        <li value="-2">戳戳</li>
+        <li>這是測試</li>
+        <li>OAO</li>
+        <li>GG</li>
+        <li>...QQ</li>
+    </ol>
+
+    <!--如果是希望有階層式的清單，可以用巢狀結構來做-->  
+    資工系大學課程
+    <ul>
+        <li>大一
+            <ol>
+                <li>程式語言</li>
+                <li>資料結構</li>              
+            </ol>
+        </li>
+        
+        <li>大二
+            <ol>
+                <li>邏輯設計</li>
+                <li>工程數學</li>              
+            </ol>  
+        </li>   
+        
+        <li>大三
+            <ol>
+                <li>作業系統</li>
+<!-- 試著研究出1.1，1.2的階層顯示         
+                <ol>課程大綱
+                    <li>期末考</li>
+                    <li>期末報告</li>
+-->                        
+                </ol>
+                <li>計算方法</li>              
+            </ol>  
+        </li>                             
+
+    </ul>
+
+</body>
+
+</html>
