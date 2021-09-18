@@ -1,0 +1,258 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<!--Head在下方-->
+<head>
+    <title>CSS教材001</title>
+    
+    <!--採用加在Head中的Style CSS標籤    
+    <style>
+        font {
+            font-size: 123pt;
+            color:#cc33cc
+        }
+        body {
+            font-size: 45pt;
+            color: #c3c;
+        }
+    </style>    
+    -->
+    <!--多個tag(逗號分隔)，或是被包含的tag(空白指示)
+    <style>
+        p, h1 {
+            color: #77f
+        }
+        p font {
+            color: rgb(69, 87, 57)
+        }
+    </style>
+    -->
+
+    <!--針對特定Class 或 ID 的 tag
+    <style>
+        p { /* 適用於所有段落，不過若指定類別或 ID 則以其為優先 */
+            color: red
+        }
+        .myClass { /* 適用於所有 class="myClass" 者 */
+            color: green
+        }
+        #myId { /* 適用於 id="myId" 者 */
+            color: blue
+        }
+        table.myClass { /* 只適用於表格中有 class="myClass" 者 */
+            font-size: 123px;
+        }
+    </style>
+    -->
+
+    <!--以下為選擇器
+    <style>
+        a:link { /*普通連結 */
+            color: blue
+        }
+        a:visited { /*點過後 */
+            color: purple
+        }
+        a:hover { /*滑鼠移上去 */
+            color: red
+        }
+        a:active { /*點著的時候*/
+            color: rgb(231, 231, 231)
+        }
+    </style>    
+    -->
+    <!--hover、active、Focus的使用
+    <style>
+        li:hover {
+            color: red
+        }
+        li:active {
+            color: blue
+        }
+        input:focus {
+            color: green
+        }
+    </style>
+    -->
+
+    <!--文繞圖的Header Style寫法
+    <style>
+         img{ float:left } /*文繞圖設定在左邊*/
+         p#Jumpout{ clear : left}  /*針對p取消設定*/
+    </style>
+    -->
+
+    <!--以下為首字放大
+    <style>
+        #test:first-letter {
+            font-size: 25pt;
+            float: left
+        }
+    </style>
+    -->
+    <!--以下為首字裝飾處理，一起給就好了
+    <style>    
+    p{ text-decoration:overline underline line-through }
+    </style>
+    -->
+
+    <!--以下為背景，一些相關的Style處理
+    <style>
+        body {
+            background-color: #ccc
+        }
+        p {
+            background-color: #0A0
+        }
+    </style>    
+       
+    <style>
+        body {
+            background-image: url("run.jpg");
+            background-repeat: repeat
+            
+        }
+        p,li{ color: #fff;}
+    </style>
+   
+    <style>
+        body{
+            background-image: url("run.jpg");
+            background-attachment: fixed
+        }
+    </style>
+     -->
+</head>
+
+<!--以下為BODY，並且增加屬性-->
+<body>
+
+<!--以下文字內容
+CSSdemo001：在標籤內與標籤之外的文字<br>
+<font>在 font 標籤內</font><br>
+在 font 標籤外<br><br>
+
+
+CSSdemo002：多個tag與nested tag文字<br>
+<h1>第一級標題</h1>
+<p>第一個段落</p>
+<p>第<font>二個段</font>落</p><br><br>
+
+CSSdemo003：針對特定Class 或 ID 的 tag<br>
+<p>一般的段落</p>
+<p class="myClass">指定 class 的段落</p>
+<p id="myId">指定 ID 的段落</p>
+ 
+<table class="myClass"><tr><td>表格裡面的字</td></tr></table>
+
+
+<a href="http://www.nthu.edu.tw" target="123">清華大學首頁</a><br>
+<a href="http://www.nthu.edu.tw" target="123">清華大學首頁</a>
+
+<ul>
+    <li>嚞</li>
+    <li>龘</li>
+    <li>犇</li>  
+</ul>
+<input type="text" value="龜龜龜龜龜">
+
+
+-->
+<!--以下為文繞圖，設定了就需要清除
+<img src="sleep.jpg" width="500">
+<p>我與父親不相見已有二年餘了，我最不能忘記的是他的背影。
+那年冬天，祖母死了，父親的差使也交卸了，正是禍不單行的日子，
+我從北京到徐州，打算跟著父親奔喪回家。
+到徐州見著父親，看見滿院狼籍的東西，又想起祖母，不禁簌簌地流下眼淚。</p>
+ 
+<p>父親說，“事已如此，不必難過，好在天無絕人之路！”</p>
+ 
+<p id="Jumpout">回家變賣典質，父親還了虧空；又借錢辦了喪事。
+這些日子，家中光景很是慘淡，一半為了喪事，一半為了父親賦閒。
+喪事完畢，父親要到南京謀事，我也要回到北京唸書，我們便同行。</p>
+
+
+<p id="test">
+    先帝慮漢、賊不兩立，王業不偏安，故托臣以討賊也。
+    以先帝之明，量臣之才，故知臣伐賊，才弱敵強也。
+    然不伐賊，王業亦亡。惟坐而待亡，孰與伐之？
+    是故托臣而弗疑也。臣受命之日，寢不安席，食不甘味；
+    思惟北征，宜先入南：故五月渡瀘，深入不毛，並日而食。
+    ──臣非不自惜也：顧王業不可偏安於蜀都，故冒危難以奉先帝之遺意。
+    而議者謂為非計。今賊適疲於西，又務於東，兵法“乘勞”：此進趨之時也。謹陳其事如左：
+    </p>
+     
+    <p style="text-indent: 6em;">
+    高帝明並日月，謀臣淵深，然涉險被創，危然後安；
+    今陛下未及高帝，謀臣不如良、平，而欲以長策取勝，坐定天下：此臣之未解一也。
+    劉繇、王朗，各據州郡，論安言計，動引聖人，群疑滿腹，眾難塞胸；
+    今歲不戰，明年不征，使孫策坐大，遂並江東：此臣之未解二也。
+    曹操智計，殊絕於人，其用兵也，仿怫孫、吳，然困於南陽，險於烏巢，危於祁連，逼於黎陽，幾敗北山，殆死潼關，然後偽定一時耳；
+    況臣才弱，而欲以不危而定之：此臣之未解三也。
+    曹操五攻昌霸不下，四越巢湖不成，任用李服而李服圖之，委任夏侯而夏侯敗亡，先帝每稱操為能，猶有此失；
+    況臣弩下，何能必勝：此臣之未解四也。
+    自臣到漢中，中間期年耳，然喪趙雲、陽群、馬玉、閻芝、丁立、白壽、劉合、鄧銅等，及驅長屯將七十余人，
+    突將無前，叢叟、青羌，散騎武騎一千余人，此皆數十年之內，所糾合四方之精銳，非一州之所有；
+    若複數年，則損三分之二也。──當何以圖敵：此臣之未解五也。今民窮兵疲，而事不可息；
+    事不可息，則住與行，勞費正等；而不及今圖之，欲以一州之地，與賊持久：此臣之未解六也。
+    </p>
+
+<p style="font-family:標楷體">這是字型測試</p>
+<p style="font-weight:bold">這是粗體測試</p>
+<p style="font-style:italic">這是斜體測試</p>
+<p style="text-decoration:overline underline line-through">這是文字加上裝飾線條</p>
+<p>這是文字加上裝飾線條</p> <!--Style在表頭
+
+<p>一般的段落</p>
+
+<p>background-repeat的設定：</p>
+<ul>
+    <li>repeat: 重複到貼滿為止，此為預設的顯示方式</li>
+    <li>repeat-x: 橫向重複</li>
+    <li>repeat-y: 縱向重複</li>
+    <li>no-repeat: 只貼一次(在左上方)</li>
+</ul>
+這是字<br><br><br><br>
+這是字<br><br><br><br>
+這是字<br><br><br><br>
+這是字<br><br><br><br>
+這是字<br><br><br><br>
+這是字<br><br><br><br>
+這是字<br><br><br><br>
+這是字<br><br><br><br>
+這是字<br><br><br><br>
+這是字<br><br><br><br>
+這是字<br><br><br><br>
+這是字<br><br><br><br>
+這是字<br><br><br><br>
+這是字<br><br><br><br>
+這是字<br><br><br><br>
+這是字<br><br><br><br>
+這是字<br><br><br><br>
+這是字<br><br><br><br>
+
+
+<p style="background: rgba(0, 0, 0, 0.2); font-size: 123px;">這是字這是字這是字這是字這是字</p>
+-->
+<p style="cursor: crosshair">變十字</p>
+ 
+<p style="cursor: n-resize">改變大小用的箭頭(n-resize)</p>
+<p style="cursor: s-resize">改變大小用的箭頭(s-resize)</p>
+<p style="cursor: w-resize">改變大小用的箭頭(w-resize)</p>
+<p style="cursor: e-resize">改變大小用的箭頭(e-resize)</p>
+ 
+<p style="cursor: ne-resize">改變大小用的箭頭(ne-resize)</p>
+<p style="cursor: nw-resize">改變大小用的箭頭(nw-resize)</p>
+<p style="cursor: se-resize">改變大小用的箭頭(se-resize)</p>
+<p style="cursor: sw-resize">改變大小用的箭頭(sw-resize)</p>
+ 
+<p style="cursor: hand">變成手(hand)"?待確認</p>
+<p style="cursor: move">變成可移動用的型狀(move)</p>
+<p style="cursor: wait">等待中...(wait)</p>
+<p style="cursor: help">說明(help)</p>
+ 
+<p style="cursor: url(run.jpg)">變圖片"?待確認</p>
+</body>
+
+</html>
