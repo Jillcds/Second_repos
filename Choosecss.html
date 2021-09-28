@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<!--Head在下方-->
+<head>
+    <title>Margin的練習</title>
+    <!--基礎的選擇器使用
+    <style>
+        [xxx] {
+            font-size: 2px;
+        }
+        [xxx="yyy"] {
+            color: rgb(31, 19, 202);
+        }
+        [xxx~="ccc"] {
+            color: green;
+        }
+        input[xxx="yyy"] {
+            border: 10px solid;
+        }
+    </style>
+    
+    Before After處理用法，可做出精美小圖示
+    <style>
+        p:before {
+            content: "這是被加在段落前的一些內容";
+            color: red;
+        }
+        p:after {
+            content: "這是被加在段落後的一些內容";
+            color: green;
+        }
+    </style>    
+
+    只作用一層
+    <style>
+        ul.AAA li {
+            border:1px solid;
+        }
+        ul.BBB > li{
+            border:1px solid;
+        }
+    </style>-->
+    <style>
+        li:nth-child(4n-1) {
+            background-color: #555;
+        }
+    </style>
+
+
+</head>
+
+<!--以下為BODY，並且增加屬性-->
+<body bgcolor="#ccccff">
+    <!--基礎的選擇器使用
+    <p xxx="abc">屬性 xxx，字體大小 30</p>
+    <p xxx="yyy">屬性 xxx 值 yyy，顏色變藍</p>
+    <p xxx="bbb ccc ddd">屬性 xxx 值包含 ccc，顏色變綠</p>
+    <input type="text" xxx="yyy" size="50" value="屬性 xxx 值 yyy 且是 input，加框"/>
+    <p>這是一個普通的段落</p>
+    <ul class="AAA">
+        <li>1
+            <ul>
+                <li>1-1</li>
+                <li>1-2</li>
+            </ul>
+        </li>
+        <li>2</li>
+    </ul>
+     
+    <ul class="BBB">
+        <li>1
+            <ul>
+                <li>1-1</li>
+                <li>1-2</li>
+            </ul>
+        </li>
+        <li>2</li>
+    </ul>-->
+
+    <ol>
+        <li>...</li><li>...</li><li>...</li><li>...</li>
+        <li>...</li><li>...</li><li>...</li><li>...</li>
+        <li>...</li><li>...</li><li>...</li><li>...</li>
+        <li>...</li><li>...</li><li>...</li><li>...</li>
+        <li>...</li><li>...</li><li>...</li><li>...</li>
+        <li>...</li><li>...</li><li>...</li><li>...</li>
+        <li>...</li><li>...</li><li>...</li><li>...</li>
+        <li>...</li><li>...</li><li>...</li><li>...</li>
+    </ol>
+
+</body>
+
+</html>    
