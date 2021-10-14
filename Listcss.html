@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+    將文字相關的Tag整理於此
+    名稱為Text.html    
+-->
+<html>
+<!--一般來說HTML都會分Head跟Body-->
+<style>
+    .menu li {
+        position: relative;
+        width: 70px;
+        list-style:none;
+        float: left; /* 讓第一層橫著長 */
+    }
+    .menu li ul {
+        display: none
+    }
+    .menu li:hover > ul {
+        display: block;
+        position: absolute;
+        left: 100%;
+        top: 0;
+        width: 70px;
+        padding: 0;
+    }
+    /* 只讓第二層是向下展開 */
+    .menu > li:hover > ul {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 70px;
+        padding: 0;
+    }
+</style>
+<!--Head在下方-->
+<head>
+    <title>清單CSS的練習</title>
+</head>
+
+<!--以下為BODY，並且增加屬性-->
+<body bgcolor="#ffffcc">
+
+    <ul class="menu">
+        <li>本系介紹
+            <ul>
+                <li>一二三四</li>
+                <li>五六七八</li>
+            </ul>
+        </li>
+        <li>系上成員
+            <ul>
+                <li>教授成員
+                    <ul>
+                        <li>第一位</li>
+                        <li>第二位</li>
+                        <li>第三位</li>
+                    </ul>
+                </li>
+                <li>行政人員</li>
+            </ul>
+        </li>
+        <li>研究領域
+            <ul>
+                <li>實驗室
+                    <ul>
+                        <li>第一間</li>
+                        <li>第二間</li>
+                        <li>第三間</li>
+                    </ul>
+                </li>
+                <li>影音網</li>
+            </ul>
+        </li>
+    </ul>
+     
+
+
+</body>
+
+</html>    
