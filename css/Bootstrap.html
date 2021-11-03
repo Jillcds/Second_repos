@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<!--
+    這是空殼
+    預備當作HTML網頁的基礎
+-->
+<html>
+
+<!--以下為HEADER，並且增加屬性-->
+<head>
+    <title>圓角、陰影、轉變、動畫CSS練習</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">    
+</head>
+
+<!--以下為BODY，並且增加屬性-->
+<body bgcolor="#ffffcc">
+    <!--以下為最簡單的處理-->    
+    <div class="container-fluid">
+        <h1>早安</h1>
+        <p>這是一些充版面的廢文這是一些充版面的廢文這是一些充版面的廢文這是一些充版面的廢文這是一些充版面的廢文這是一些充版面的廢文這是一些充版面的廢文這是一些充版面的廢文這是一些充版面的廢文這是一些充版面的廢文</p>
+    </div>
+    <br><br>
+    <!--以下為Grid-->     
+    <div class="container-fluid">
+        <p>預設是等分：</p>
+        <div class="row">
+            <div class="col" style="background-color: #eee;">AAA</div>
+            <div class="col" style="background-color: #aaa;">BBB</div>
+            <div class="col" style="background-color: #eee;">CCC</div>
+        </div>
+     
+        <p>Bootstrap 的 grid 是分成 12 份，也可以選擇每份的佔比(col-x)：</p>
+        <div class="row">
+            <div class="col-9" style="background-color: #eee;">AAA</div>
+            <div class="col-3" style="background-color: #aaa;">BBB</div>
+        </div>
+    </div>    
+    <br><br>
+
+    <!--以下為不同視窗下的不同grid處理-->      
+    <p>Bootstrap 的 grid 可以根據不同視窗大小分成不同等份：</p>    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-lg-3" style="background-color: #aaa;">AAA</div>
+            <div class="col-md-6 col-lg-3" style="background-color: #bbb;">BBB</div>
+            <div class="col-md-6 col-lg-3" style="background-color: #ccc;">CCC</div>
+            <div class="col-md-6 col-lg-3" style="background-color: #ddd;">DDD</div>
+        </div>
+    </div>
+    <br><br>
+
+    <!--以下為Bootstrap的預設處理-->      
+    <p>Bootstrap 的預設處理：</p>   
+    <div class="container-fluid">
+        <p>可以把文字加上 <mark>醒目底色</mark> 的 mark 標籤</p>
+        <p>代表 <abbr title="縮寫">縮寫</abbr> 的 abbr (abbreviation)標籤</p>
+        <p>代表 <code>程式碼</code> 的 code 標籤</p>
+        <p>代表 <kbd>鍵盤輸入</kbd> 的 kbd 標籤</p>
+    </div>    
+    <br><br>    
+
+    
+    <!--以下為Bootstrap的表格處理-->      
+    <p>Bootstrap 的表格處理：</p>      
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <p>只有橫線的表格</p>
+                <table class="table">
+                    <thead><tr>
+                        <th>姓名</th>
+                        <th>學號</th>
+                    </tr></thead>
+                    <tbody>
+                        <tr><td>ABC</td><td>123</td></tr>
+                        <tr><td>DEF</td><td>456</td></tr>
+                        <tr><td>XYZ</td><td>789</td></tr>
+                    </tbody>
+                </table>
+            </div>
+     
+            <div class="col">
+                <p>在奇數列標上條紋(table-striped)</p>
+                <table class="table table-striped">
+                    <thead><tr>
+                        <th>姓名</th>
+                        <th>學號</th>
+                    </tr></thead>
+                    <tbody>
+                        <tr><td>ABC</td><td>123</td></tr>
+                        <tr><td>DEF</td><td>456</td></tr>
+                        <tr><td>XYZ</td><td>789</td></tr>
+                    </tbody>
+                </table>
+            </div>
+     
+            <div class="col">
+                <p>滑鼠指到的 row 會變色(table-hover)</p>
+                <table class="table table-hover">
+                    <thead><tr>
+                        <th>姓名</th>
+                        <th>學號</th>
+                    </tr></thead>
+                    <tbody>
+                        <tr><td>ABC</td><td>123</td></tr>
+                        <tr><td>DEF</td><td>456</td></tr>
+                        <tr><td>XYZ</td><td>789</td></tr>
+                    </tbody>
+                </table>
+            </div>
+     
+            <div class="col">
+                <p>一些預設的底色</p>
+                <table class="table">
+                    <thead><tr>
+                        <th>姓名</th>
+                        <th>學號</th>
+                        <th>備註</th>
+                    </tr></thead>
+                    <tbody>
+                        <tr><td>ABC</td><td>123</td><td>123</td></tr>
+                        <tr class="table-success"><td>DEF</td><td>456</td><td>很高分</td></tr>
+                        <tr class="table-warning"><td>GHI</td><td>000</td><td>有點慘</td></tr>
+                        <tr class="table-danger"><td>XYZ</td><td>789</td><td>不及格</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    
+    <!--以下為Bootstrap的警告處理-->      
+    <p>Bootstrap 的警告處理：</p>        
+    <div class="container-fluid">
+        <p>一個基本用法：</p>
+        <div class="alert alert-success">
+            Success!
+        </div>
+     
+        <p>可以在訊息中附上連結：</p>
+        <div class="alert alert-info">
+            Info! Read <a href="#" class="alert-link">this medssage</a>.
+        </div>
+     
+        <p>Bootstrap 也有提供可以將訊息關閉的按鈕，但完整的功能需要引入 JavaScript：</p>
+        <div class="alert alert-warning">
+            Wanging! Read <a href="#" class="alert-link">this medssage</a>.
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+        </div>
+     
+        <p>其他的樣式們：</p>
+        <div class="alert alert-danger">Danger!</div>
+        <div class="alert alert-primary">Primary!</div>
+        <div class="alert alert-secondary">Secondary!</div>
+        <div class="alert alert-dark">Dark!</div>
+        <div class="alert alert-light">Light!</div>
+    </div>    
+    <br><br>    
+
+    <!--以下為Bootstrap的分頁處理-->      
+    <p>Bootstrap 的分頁處理：</p>       
+    <div class="container-fluid">
+        <p>可以把目前的頁數加上 active，已經沒有頁面的連結可以加上 disabled：</p>
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item disabled"><a class="page-link" href="#">Next</a></li>
+        </ul>
+     
+        <p>可以置中(justify-content-center)或靠右(justify-content-end)：</p>
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item disabled"><a class="page-link" href="#">Next</a></li>
+        </ul>
+        <ul class="pagination justify-content-end">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item disabled"><a class="page-link" href="#">Next</a></li>
+        </ul>
+    </div>   
+    <br><br>      
+
+    <!--以下為Bootstrap的適合做資料展示的 Card 樣式-->      
+    <p>Bootstrap的適合做資料展示的 Card 樣式：</p>      
+    <div class="container-fluid">
+        <p>一個簡單的卡片樣貌：</p>
+        <div class="card" style="width:300px">
+            <div class="card-body">
+                <h3 class="card-title">早安</h3>
+                <p class="card-text">當我們睡覺的時候，美國人正在努力工作</p>
+                <a href="https://zh.wikipedia.org/wiki/%E6%97%B6%E5%8C%BA" class="card-link">See more info</a>
+            </div>
+        </div>
+     
+        <p>在卡片上加入圖片：</p>
+        <div class="card" style="width:300px">
+            <img class="card-img-top" src="../pic/HuShih.jpg" alt="HuShih" style="width:100%">
+            <div class="card-body">
+                <h3 class="card-title">胡適</h3>
+                <p class="card-text">不要因為有配著偉人照片，就隨便相信網路上流傳的名言佳句。</p>
+                <a href="https://zh.wikipedia.org/wiki/%E8%83%A1%E9%81%A9" class="btn btn-primary">See Profile</a>
+            </div>
+        </div>
+     
+        <p>如果在超連結的類別中加入 stretched-link，則整張卡片都可以點選：</p>
+        <div class="card" style="width:300px">
+            <img class="card-img-top" src="../pic/Einstein.jpg" alt="Einstein" style="width:100%">
+            <div class="card-body">
+                <h3 class="card-title">愛因斯坦</h3>
+                <p class="card-text">不要相信胡適。</p>
+                <a href="https://zh.wikipedia.org/wiki/%E9%98%BF%E5%B0%94%E4%BC%AF%E7%89%B9%C2%B7%E7%88%B1%E5%9B%A0%E6%96%AF%E5%9D%A6" class="btn btn-primary stretched-link">See Profile</a>
+            </div>
+        </div>
+     
+        <p>把 card-body 改為 card-img-overlay，則文字可以跟圖片重疊：</p>
+        <div class="card" style="width:300px">
+            <img class="card-img-top" src="../pic/Edison.jpg" alt="Edison" style="width:100%">
+            <div class="card-img-overlay">
+                <h3 class="card-title text-white">愛迪生</h3>
+                <p class="card-text text-white">發明燈泡不是給你裝奶茶用的</p>
+                <a href="https://www.youtube.com/watch?v=2QlzgZPxg1c" class="btn btn-primary">See Profile</a>
+            </div>
+        </div>
+    </div>    
+</body>
+
+</html>

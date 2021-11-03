@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+    這是空殼
+    預備當作HTML網頁的基礎
+-->
+<html>
+
+<!--以下為HEADER，並且增加屬性-->
+<head>
+    <title>Media的CSS練習</title>
+    <!--在500px以下變成粉黃   
+    <style>
+        body {
+            background: #ccf
+        }
+        @media (max-width: 500px) {
+            body{
+                background: rgb(102, 221, 47)
+            }
+        }
+    </style>  --> 
+    <!--在700px以下變成直排   
+    <style>
+        div {
+            float: left;
+            width: 33%;
+            height: 300px;
+        }
+        .a{
+            background-color: #fcc;
+        }
+        .b {
+            background-color: #cfc;
+        }
+        .c {
+            background-color: #ccf;
+        }
+        @media (max-width: 700px) {
+            .a, .b, .c {
+                width: 100%;
+            }
+        }
+    </style>    -->
+    <!--更多變成直排例子   -->
+    <style>
+        div {
+            box-sizing: border-box;
+        }
+        .header {
+            background-color: #eee;
+            text-align: center;
+            padding: 15px;
+        }
+        .menu {
+            float: left;
+            width: 20%;
+        }
+        .menu a{
+            background-color: #eee;
+            padding: 3px;
+            margin: 3px;
+            display: block;
+            text-align: center;
+        }
+        .main {
+            float: left;
+            width: 60%;
+            padding: 15px;
+        }
+        .right {
+            float: left;
+            width: 20%;
+            text-align: center;
+            background-color: #eee;
+            padding: 10px;
+            margin-top: 3px;
+        }
+        @media (max-width: 700px) {
+            .menu, .main, .right {
+                width: 100%;
+            }
+        }
+    </style>    
+    <!--暗色主題處理
+    <style>
+        body {
+            background-color: #ccc;
+            color: #333;
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #333;
+                color: #ccc;
+            }
+        }
+    </style> -->       
+</head>
+
+<!--以下為BODY，並且增加屬性-->
+<body bgcolor="#ffffcc">
+    <!--在700px以下變成直排      
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>--> 
+
+    <!--更多變成直排例子   -->
+
+    <div class="header"><h1>早安，當我們在睡覺的時候，美國人正在努力工作</h1></div>
+ 
+    <div class="menu">
+        <a href="#">Paper 01</a>
+        <a href="#">Paper 02</a>
+        <a href="#">Paper 03</a>
+        <a href="#">Paper 04</a>
+        <a href="#">Paper 05</a>
+        <a href="#">Paper 06</a>
+    </div>
+     
+    <div class="main">
+    商女不知亡國恨，一天到晚寫論文。舉頭望明月，低頭寫論文。洛陽親友如相問，就說我在寫論文。少壯不努力，老大寫論文。垂死病中驚坐起，今天還沒寫論文。人生自古誰無死，來生繼續寫論文。眾裡尋他千百度，驀然回首，那人正在寫論文。昔人已乘黃鶴去，此地剩我寫論文。勸君莫打枝頭鳥，子在巢中寫論文。身無彩鳳雙飛翼，心有靈犀寫論文。故人具雞黍，邀我寫論文。不識廬山真面目，只緣我在寫論文。採得百花成蜜後，為誰辛苦寫論文。孤舟蓑笠翁，獨自寫論文。姑蘇城外寒山寺，夜半鐘聲寫論文。楊家有女初長成，養在深閨寫論文。
+    </div>
+     
+    <div class="right">
+    我想到一篇絕妙的論文，但是這裡空間太小了我寫不下
+    </div>           
+
+    <!--暗色主題處理
+    <p>這是一些普通的文字</p>-->
+</body>
+
+</html>
